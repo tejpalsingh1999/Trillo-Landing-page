@@ -1,5 +1,6 @@
 @import "base/base";
 @import "base/typography";
+@import "base/animation";
 
 @import "abstract/variable";
 
@@ -8,3 +9,7 @@
 @import "layouts/sidebar";
 
 @import "pages/home";
+
+@import "components/gallery";
+@import "components/overview";
+@import "components/btn-inline";
