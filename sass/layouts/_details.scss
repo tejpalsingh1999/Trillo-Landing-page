@@ -1,4 +1,5 @@
 .detail{
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
@@ -6,7 +7,7 @@
 }
 
 .description{
-    font-size: 1.4rem;
+    
     background-color: white;
     box-shadow: var(--shadow-light);
     flex: 0 0 60%;
@@ -16,6 +17,8 @@
 
 
 .user-reviews{
-    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
 }

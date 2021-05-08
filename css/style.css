@@ -186,13 +186,13 @@ body {
   padding: 2.5rem; }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
 
 .description {
-  font-size: 1.4rem;
   background-color: white;
   box-shadow: var(--shadow-light);
   flex: 0 0 60%;
@@ -200,8 +200,10 @@ body {
   padding: 3rem; }
 
 .user-reviews {
-  background-color: yellowgreen;
-  flex: 1; }
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center; }
 
 .container {
   max-width: 120rem;
@@ -270,8 +272,13 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: all .2s; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: margin-left .2s; }
   .btn-inline:hover {
     color: var(--color-grey-dark-1); }
+    .btn-inline:hover span {
+      margin-left: 8px; }
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
@@ -319,3 +326,42 @@ body {
     border: 3px solid white; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+
+.review {
+  background-color: white;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden; }
+  .review__text {
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative; }
+  .review__user {
+    display: flex;
+    align-items: center; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
+  .review__user-box {
+    margin-left: 1.5rem;
+    margin-right: auto; }
+  .review__user-name {
+    font-weight: 600; }
+  .review__user-date {
+    font-size: 1.1rem; }
+  .review__rating {
+    font-size: 2rem;
+    color: var(--color-primary); }
+  .review::before {
+    content: "\201c";
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    line-height: 0;
+    font-family: sans-serif;
+    z-index: 1; }
