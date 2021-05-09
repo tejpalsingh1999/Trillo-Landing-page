@@ -9,12 +9,26 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         padding: 1.5rem 3rem;
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.75rem;
+            padding: 1.5rem 1rem;
+        }
+        @media only screen and (max-width: 365px){
+            width: 30%;
+        }
+
     }
 
     &__stars{
         // flex: 1;
         margin-right: auto;
         display: flex;
+
+        @media only screen and (max-width: 23.13em){ //370px
+            margin-right: 1rem;        
+        }
+       
+        
     }
 
     &__icon-star,
@@ -26,11 +40,19 @@
 
     &_icon-location{
         margin-right: .5rem;
+        
     }
     &__location{
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 28.12em){
+            flex-direction: column;     
+        }
+        @media only screen and (max-width: 28.12em){
+            margin-left: auto;        
+        }
     }
 
     &__rating{
@@ -44,6 +66,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: $bp-small){
+            margin-left: 1.5rem;        
+        }
+        @media only screen and (max-width: 28.12em){
+            margin-left: .5rem;      
+            padding: 0 1rem;  
+        }
 
         &-average{
             font-size: 2.25rem;

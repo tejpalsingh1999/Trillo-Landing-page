@@ -23,6 +23,11 @@
         margin-right: 1rem;
 
         //older browsers
+        @supports(-webkit-mask-image: url()) or(mask-image: url()){
+            background-image: url(../../img/SVG/chevron-thin-right.svg);
+            background-size: cover;
+            background-image: none;
+        }
         // background-image: url(../../img/SVG/chevron-thin-right.svg);
         // background-size: cover;
 

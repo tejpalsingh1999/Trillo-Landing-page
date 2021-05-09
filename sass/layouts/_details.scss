@@ -4,15 +4,29 @@
     padding: 4.5rem;
     background-color: var(--color-grey-light-1);
     border-bottom: var(--line);
+    @media only screen and (max-width: $bp-medium){
+        padding: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
 }
 
 .description{
-    
     background-color: white;
     box-shadow: var(--shadow-light);
     flex: 0 0 60%;
     margin-right: 4.5rem;
     padding: 3rem;
+    @media only screen and (max-width: $bp-medium){
+        margin-right: 1.5rem;
+        padding: 2rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        margin-bottom: 2rem;
+        width: 100%;
+    }
 }
 
 
@@ -21,4 +35,21 @@
     flex-direction: column;
     flex: 1;
     align-items: center;
+
+    & #review2{
+        margin-bottom: 2rem
+    }
+
+    & > *:not(:last-child){
+        @media only screen and (max-width: $bp-small){
+            width: 80%;
+        }
+    }
+    
+    @media only screen and (max-width: $bp-small){
+        
+    }
+    
+
+   
 }

@@ -2,10 +2,19 @@
     padding: 3.5rem;
     text-align: center;
 
+    @media only screen and (max-width: $bp-medium){
+        padding: 2rem ;
+    }
+
     &__book-now{
         font-size: 2rem;
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 2.5rem;
+
+        @media only screen and (max-width: $bp-medium){
+            margin-bottom: 2rem ;
+            font-size: 1.8rem;
+        }
     }
 }
